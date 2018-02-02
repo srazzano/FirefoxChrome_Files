@@ -1,0 +1,63 @@
+/* Tab Close Button Left on Hover */
+#titlebar-buttonbox,
+.tabbrowser-arrowscrollbox scrollbox > box {
+  display: block !important;
+}
+#main-window:not(#f) #navigator-toolbox .tabbrowser-tab {
+  -moz-box-sizing: border-box !important;
+  height: 33px !important;
+  vertical-align: top !important;
+}
+#main-window:not(#f) #navigator-toolbox #tabbrowser-tabs .tabbrowser-tab:not([pinned]) {
+  width: auto !important;
+}
+#main-window:not(#f) #navigator-toolbox #tabbrowser-tabs .tabbrowser-tab[pinned] {
+  width: 94px !important;
+}
+#main-window:not(#f) #navigator-toolbox .tabbrowser-tab .tab-icon-image,
+#main-window:not(#f) #navigator-toolbox .tabbrowser-tab .tab-close-button {
+  margin: 0 6px 0 -3px !important;
+  padding: 0 !important;
+}
+#main-window:not(#f) #navigator-toolbox #tabbrowser-tabs .tabbrowser-tab .tab-close-button {
+  display: none !important;
+  list-style-image: url(file:///C:/FirefoxChrome/close.png) !important;
+}
+#main-window:not(#f) .close-icon > .button-icon,
+#main-window:not(#f) .close-icon > .button-box > .button-icon,
+#main-window:not(#f) .close-icon > .toolbarbutton-icon {
+  height: 16px !important;
+  width: 16px !important;
+}
+#main-window:not(#f) #navigator-toolbox .tabbrowser-tab:hover .tab-icon-image {
+  display: none !important;
+}
+#main-window:not(#f) #navigator-toolbox #tabbrowser-tabs .tabbrowser-tab:hover .tab-close-button {
+  -moz-image-region: rect(0 16px 16px 0) !important;
+  display: -moz-box !important;
+}
+#main-window:not(#f) #navigator-toolbox #tabbrowser-tabs .tabbrowser-tab:hover .tab-close-button:hover {
+  -moz-image-region: rect(0 32px 16px 16px) !important;
+}
+#main-window:not(#f) #navigator-toolbox .tab-text {
+  color: #000 !important;
+  font-weight: bold !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#main-window:not(#f) #navigator-toolbox .tabbrowser-tab[selected=true] .tab-text {
+  color: #00C !important;
+}
+#main-window:not(#f) #navigator-toolbox .tabbrowser-tab .tab-close-button {
+  -moz-box-ordinal-group: 1 !important;
+} 
+#main-window:not(#f) #navigator-toolbox .tabbrowser-tab .tab-throbber {
+  -moz-box-ordinal-group: 2 !important;
+}
+#main-window:not(#f) #navigator-toolbox .tabbrowser-tab .tab-label-container {
+  -moz-box-ordinal-group: 3 !important;
+}
+#main-window:not(#f) #navigator-toolbox .tabbrowser-tab .tab-icon-sound {
+  -moz-box-ordinal-group: 4 !important;
+}
+

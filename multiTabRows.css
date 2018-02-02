@@ -1,0 +1,35 @@
+/* Multi Tab Rows */
+#main-window:not(#f) #navigator-toolbox .tabbrowser-tab {
+  -moz-box-sizing: border-box !important;
+  height: 33px !important;
+  vertical-align: top !important;
+}
+#main-window:not(#f) #navigator-toolbox #tabbrowser-tabs .tabbrowser-tab:not([pinned]) {
+  width: auto !important;
+}
+#main-window:not(#f) #navigator-toolbox .tabbrowser-tab[pinned] {
+  width: 94px !important;
+}
+#main-window:not(#f) #navigator-toolbox .tabbrowser-tab .tab-close-button {
+  display: -moz-box !important;
+}
+toolbarbutton.titlebar-button {
+  height: 33px !important;
+}
+#titlebar-buttonbox,
+.tabbrowser-arrowscrollbox scrollbox > box {
+  display: block !important;
+}
+#titlebar-buttonbox {
+  vertical-align: top !important;
+}
+.tabbrowser-arrowscrollbox scrollbox {
+  overflow: visible !important;
+}
+.tab-label-container[textoverflow]:not([pinned]) {
+  mask-image: unset !important;
+}
+.scrollbutton-up,
+.scrollbutton-down {
+  display: none !important;
+}
