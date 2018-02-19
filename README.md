@@ -1,1 +1,1 @@
-Files and images for Firefox Quantum browsers UI.
+Files and images for Firefox Quantum UI.
