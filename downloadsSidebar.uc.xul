@@ -1,0 +1,21 @@
+<!-- Adds a downloads sidebar, with CTRL+J to open it and CTRL+SHIFT+J to open the downloads window. -->
+<?xml version="1.0"?>
+<overlay id="downloads-sidebar" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/javascript"><![CDATA[
+    document.addEventListener("keypress", event => {
+      if ((event.which === 106 || event.which === 74) && event.ctrlKey) {
+        event.preventDefault();
+        if (event.shiftKey) BrowserDownloadsUI();
+        else SidebarUI.toggle('viewDownloadsSidebar');
+      }
+    });
+  ]]></script>
+
+  <broadcasterset id="mainBroadcasterSet">
+    <broadcaster id="viewDownloadsSidebar" autoCheck="false" label="Downloads" type="checkbox" group="sidebar" sidebarurl="about:downloads" sidebartitle="Downloads" oncommand="SidebarUI.toggle('viewDownloadsSidebar');"/>
+  </broadcasterset>
+
+  <menupopup id="viewSidebarMenu">
+    <menuitem key="downloads-view-sidebar" observes="viewDownloadsSidebar" acceltext="Ctrl+J"/>
+  </menupopup>
+</overlay>

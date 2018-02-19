@@ -1,0 +1,77 @@
+/* Dark Scrollbar Square */
+/*
+scrollbar, scrollbar *, scrollcorner {
+  -moz-appearance: none !important;
+  --scrollbar-width: 10px;
+  --scrollbar-height: var(--scrollbar-width);
+}
+scrollbar, scrollcorner  {
+  background: #282828 !important;
+}
+scrollbar[orient="vertical"] {
+  width: var(--scrollbar-width) !important;
+  min-width: var(--scrollbar-width) !important;
+}
+scrollbar[orient="horizontal"] {
+  height: var(--scrollbar-height) !important;
+  min-height: var(--scrollbar-height) !important;
+}
+scrollbar thumb {
+  background: #646464 !important;
+}
+scrollbar thumb:hover,
+scrollbar thumb:active {
+  background: #00ACED !important;
+}
+scrollbar:hover scrollbarbutton {
+  background-color: #444444 !important;
+}
+scrollbar scrollbarbutton:hover {
+  background: #646464 !important;
+}
+scrollbar scrollbarbutton:active {
+  background: #00ACED !important;
+}
+*/
+
+/* Dark Scrollbar Rounded */
+
+scrollbar {
+  -moz-appearance: none !important;
+  border-radius: 8px !important;
+}
+scrollbar > slider {
+  -moz-appearance: none !important;
+  background: black !important;
+  border-width: 0 !important;
+  border-radius: 8px !important;
+  box-shadow: inset 0 0 1px 1px black, inset 3px 3px 3px 3px black, inset -3px -3px 6px 3px hsla(0, 0%, 70%, 0.70) !important;
+}
+scrollbar > slider > thumb {
+  -moz-appearance: none !important;
+  background-color: black !important;
+  border-width: 0 !important;
+  border-radius: 10px !important;
+  box-shadow: inset 0 0 1px 1px black, inset -3px -3px 3px 3px black, inset 5px 5px 5px 5px hsla(0, 0%, 90%, 0.80) !important;
+}
+scrollbar[orient='vertical'] > slider > thumb {
+  min-height: 35px !important;
+}
+scrollbar[orient='horizontal'] > slider > thumb {
+  min-width: 35px !important;
+}
+scrollbar > slider > thumb:hover, 
+scrollbar > slider > thumb:active {
+  box-shadow: inset 0 0 1px 0 white, inset 0 0 2px 2px black, inset -3px -3px 3px 3px black, inset 5px 5px 6px 6px hsla(0, 0%, 100%, 0.90) !important;
+}
+scrollbar > scrollbarbutton { 
+  -moz-appearance: none !important; 
+  background: none !important; 
+  border: none !important; 
+}
+scrollbar[orient='vertical'] > scrollbarbutton { 
+  min-height: 0 !important; 
+}
+scrollbar[orient='horizontal'] > scrollbarbutton { 
+  min-width: 0 !important; 
+}
