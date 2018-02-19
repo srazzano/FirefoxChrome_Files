@@ -1,1 +1,1 @@
-Files for C:/FirefoxChrome folder
+Files and images for Firefox Quantum browsers UI.
